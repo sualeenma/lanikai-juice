@@ -52,8 +52,8 @@ CSS TABLE OF CONTENTS
 
 
     /* BASE TYPOGRAPHY */
-    --font-body: Helvetica, Arial, sans-serif;
-    --font-headings: Georgia, sans-serif;
+    --font-body: 'Inter', Helvetica, Arial, sans-serif;
+    --font-headings: 'ivypresto-text', serif;
 
     /* MEASUREMENT UNITS */
     --gridgap: 2em;
