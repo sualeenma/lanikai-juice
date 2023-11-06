@@ -39,13 +39,13 @@ CSS TABLE OF CONTENTS
     /* BASE COLORS */
     --color-body-background: rgb(255 255 255 / 1);
     --color-body-text: rgb(0 0 0 / .8);
-    --color-headings: rgb(0 0 0 / 1);
+    --color-headings: rgb(66, 39, 0);
     --color-links: rgb(51 102 204 / 1);
     --color-links-dark: rgb(0 51 153 / 1);
     --color-accent-color: rgb(102, 204, 124);
     --color-header-bg: transparent;
     --color-header-links: rgb(0, 0, 0);
-    --color-hero-bg: rgb(255, 210, 143);
+    --color-hero-bg: rgb(255, 238, 211);
     --color-footer-bg: rgb(255, 240, 211);
     --color-footer-text: rgb(0, 0, 0);
     --color-footer-links: rgb(227, 162, 238);
@@ -96,7 +96,7 @@ h1 {
 }
 
 h2 {
-    font-size: 6em;
+    font-size: em;
     line-height: 1.2;
 }
 
