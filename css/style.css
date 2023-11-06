@@ -46,8 +46,8 @@ CSS TABLE OF CONTENTS
     --color-header-bg: transparent;
     --color-header-links: rgb(0, 0, 0);
     --color-hero-bg: rgb(255, 210, 143);
-    --color-footer-bg: rgb(0 0 0 / 1);
-    --color-footer-text: rgb(255, 255, 255);
+    --color-footer-bg: rgb(255, 240, 211);
+    --color-footer-text: rgb(0, 0, 0);
     --color-footer-links: rgb(227, 162, 238);
 
 
@@ -91,12 +91,12 @@ h1, h2, h3 {
 }
 
 h1 {
-    font-size: 2.25em;
+    font-size: 8em;
     line-height: 1.1;
 }
 
 h2 {
-    font-size: 1.875em;
+    font-size: 6em;
     line-height: 1.2;
 }
 
@@ -107,6 +107,7 @@ h3 {
 
 p {
     max-width: 60ch;
+    font-size: 1.5em;
 }
 
 /* MEDIA QUERIES W/ RESPONSIVE TYPOGRAPHY */
