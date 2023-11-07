@@ -39,13 +39,13 @@ CSS TABLE OF CONTENTS
     /* BASE COLORS */
     --color-body-background: rgb(255 255 255 / 1);
     --color-body-text: rgb(0 0 0 / .8);
-    --color-headings: rgb(66, 39, 0);
+    --color-headings: rgb(85, 49, 0);
     --color-links: rgb(51 102 204 / 1);
     --color-links-dark: rgb(0 51 153 / 1);
     --color-accent-color: rgb(102, 204, 124);
     --color-header-bg: transparent;
     --color-header-links: rgb(0, 0, 0);
-    --color-hero-bg: rgb(255, 238, 211);
+    --color-hero-bg: rgb(211, 232, 255);
     --color-footer-bg: rgb(255, 240, 211);
     --color-footer-text: rgb(0, 0, 0);
     --color-footer-links: rgb(227, 162, 238);
@@ -98,6 +98,7 @@ h1 {
 h2 {
     font-size: em;
     line-height: 1.2;
+    font-style: bold;
 }
 
 h3 {
@@ -174,6 +175,26 @@ img {
 .two-thirds.centered { grid-column-start: 3; }
 }
 
+/* FLEX GRID */
+
+.row-flex {
+    --gridgap: 2em;
+    padding: var(--gridgap) 0;
+}
+
+@media (min-width: 768px) {
+    .row-flex {
+        display: flex;
+        gap: var(--gridgap);
+    }
+    .one-fifth {
+        width: 20%;
+    }
+    .three-fifths {
+        width: 60%;
+    }
+}
+
 /* DEMO GRID ONLY */
 .demo .row {
     margin-bottom: 0;
@@ -240,12 +261,13 @@ section {
 .hero {
     background-color: var(--color-hero-bg);
     padding-top: 8em;
-    min-height: 100vh;
+    /* min-height: 100vh; */
     display: flex;
     align-items: center;
 }
 
 .hero h1 {
+    padding-top: 2em;
 }
 
 /* SITE FOOTER */
@@ -300,6 +322,26 @@ section {
     margin: 1rem 0;
 }
 
+.lanikai-section-head {
+    font-size: 4rem;
+}
+
+.lanikai-section-head span {
+    font-size: 8rem;
+}
+
+.menu h2 {
+    color: green;
+}
+
+.wellness h2 {
+    color:rgb(66, 39, 0)
+}
+
+.story h2 {
+    color:rgb(99, 0, 21)
+}
+
 /* animation  */
 
 .fade-in {
@@ -324,6 +366,12 @@ section {
     animation-duration: .7s;
     animation-timing-function: ease-out;
     animation-fill-mode: forwards;
+    font-size: 4rem;
+}
+
+.fade-and-slide-in-from-left span {
+    font-size: 10rem;
+    font-style: bold;
 }
 
 @keyframes my-fade-and-slide-in-from-left {
@@ -520,7 +568,28 @@ section {
     }
 }
 
+/* HOMEPAGE STYLE */
 
+
+
+/* HERO STYLE */
+
+.lanikai-hero-slide {
+    align-content: center;
+    grid-template-columns: 40% 5% 55%;
+    display: grid;
+  }
+  
+  .lanikai-hero-slide .text-box {
+    grid-column: 1 / 3;
+    grid-row: 1;
+    z-index: 10;
+  }
+  
+.lanikai-hero-slide .img-box {
+    grid-column: 2 / 4;
+    grid-row: 1;
+  }
 
 
 
