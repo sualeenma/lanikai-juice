@@ -96,9 +96,9 @@ h1 {
 }
 
 h2 {
-    font-size: em;
+    font-size: 1.7em;
     line-height: 1.2;
-    font-style: bold;
+    font-weight: 700;
 }
 
 h3 {
@@ -108,7 +108,11 @@ h3 {
 
 p {
     max-width: 60ch;
-    font-size: 1.5em;
+}
+
+address {
+    font-size: inherit;
+    font-style: inherit;
 }
 
 /* MEDIA QUERIES W/ RESPONSIVE TYPOGRAPHY */
@@ -275,6 +279,7 @@ section {
     background-color: var(--color-footer-bg);
     color: var(--color-footer-text);
     padding: 5em 0;
+    font-size: .8em;
 }
 
 .site-footer h1,
@@ -295,6 +300,13 @@ section {
     color: var(--color-footer-links);
 }
 
+.site-footer .three-fifths .row {
+    padding-top: 0;
+}
+
+.site-footer .three-fifths h2 {
+    margin-bottom: 0;
+}
 
 
 /* ------------------------ */
@@ -307,6 +319,10 @@ section {
     top: -9999px;
     left: -9999px;
 }
+
+.break {
+    word-break: break-all;
+  }
 
 /* CUSTOM TYPE BLOCK: HEADLINE AND SUB HEADLINE */
 .headline {
