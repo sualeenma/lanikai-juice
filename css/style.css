@@ -274,6 +274,18 @@ section {
     padding-top: 2em;
 }
 
+.hero h1 span.hero-headline {
+    font-size: 10rem;
+    font-style: bold;
+}
+
+.hero h1 span.hero-subhead {
+    font-size: 3.8rem;
+    font-style: bold;
+    font-family: var(--font-body);
+    white-space: nowrap;
+}
+
 /* SITE FOOTER */
 .site-footer {
     background-color: var(--color-footer-bg);
@@ -385,11 +397,6 @@ section {
     font-size: 4rem;
 }
 
-.fade-and-slide-in-from-left span {
-    font-size: 10rem;
-    font-style: bold;
-}
-
 @keyframes my-fade-and-slide-in-from-left {
     from {
         opacity: 0;
@@ -491,8 +498,8 @@ section {
         display: block;
         position: absolute;
         z-index: 200;
-        top: 1em;
-        right: 1.25em;
+        top: 4em;
+        right: 2em;
         padding: 0;
         margin: 0;
         border: none;
@@ -607,6 +614,23 @@ section {
     grid-row: 1;
   }
 
+@media (max-width:767px) {
+    .lanikai-hero-slide {
+        grid-template-columns: 1fr;
+    }
+    .lanikai-hero-slide .text-box {
+        grid-row: 2;
+    }
+    .lanikai-hero-slide .img-box {
+        padding-top: 3em;
+        grid-row: 1;
+    }
+    .lanikai-hero-slide h1 {
+        padding-top: 0;
+        margin-top: 0;
+    }
+    
+}
 
 
 
