@@ -599,6 +599,7 @@ section {
 }
 
 .story p{
+    background-color: rgb(255, 221, 100);
 }
 
 
@@ -640,7 +641,11 @@ section {
     
 }
 
+/* MENU STYLE */
 
+.menu .img-box {
+    
+}
 
 
 
