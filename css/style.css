@@ -338,6 +338,10 @@ section {
     font-size: .8em;
 }
 
+.site-footer .img-box {
+    display: contents;
+}
+
 .site-footer h1,
 .site-footer h2,
 .site-footer h3 {
@@ -363,6 +367,12 @@ section {
 .site-footer .three-fifths h2 {
     margin-bottom: 0;
 }
+
+.site-footer .one-fifth p {
+    padding-bottom: 25em;
+}
+
+
 
 
 /* ------------------------ */
@@ -752,6 +762,29 @@ section {
 }
 
 
+/* ABOUT STYLE */
+
+.about .img-box {
+    display: contents;
+}
+
+.about-head {
+    font-size: 5em;
+    font-style: bold;
+}
+
+.about-2-head {
+    font-size: 5em;
+    font-style: bold;
+}
+
+/* LOCATION STYLE */
+
+.location {
+    display: flex;
+    justify-content: center;
+
+}
 
 
 
