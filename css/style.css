@@ -45,7 +45,7 @@ CSS TABLE OF CONTENTS
     --color-accent-color: rgb(102, 204, 124);
     --color-header-bg: transparent;
     --color-header-links: rgb(0, 0, 0);
-    --color-hero-bg: rgb(211, 232, 255);
+    --color-hero-bg: rgb(222, 240, 255);
     --color-footer-bg: rgb(255, 240, 211);
     --color-footer-text: rgb(0, 0, 0);
     --color-footer-links: rgb(227, 162, 238);
@@ -103,7 +103,7 @@ h3 {
 }
 
 h1 {
-    font-size: 8em;
+    font-size: 4em;
     line-height: 1.1;
 }
 
@@ -316,15 +316,29 @@ section {
 
 .hero h1 {
     padding-top: 2em;
+    line-height: 0.7;
+}
+
+@media (min-width:768px) {
+    .hero h1 {
+        line-height: 0.9;
+    }
+}
+
+@media (min-width:1000px) {
+    .hero h1 {
+        line-height: 1.1;
+    }
 }
 
 .hero h1 span.hero-headline {
-    font-size: 10rem;
+    font-size: clamp(5rem, 12vw, 10rem);
     font-style: bold;
+
 }
 
 .hero h1 span.hero-subhead {
-    font-size: 3.8rem;
+    font-size: clamp(2rem, 4.5vw, 3.8rem);
     font-style: bold;
     font-family: var(--font-body);
     white-space: nowrap;
@@ -414,7 +428,7 @@ section {
 }
 
 .menu h2 {
-    color: green;
+    color: rgb(1, 93, 1);
 }
 
 .wellness h2 {
