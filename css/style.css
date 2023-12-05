@@ -39,13 +39,13 @@ CSS TABLE OF CONTENTS
     /* BASE COLORS */
     --color-body-background: rgb(255 255 255 / 1);
     --color-body-text: rgb(0 0 0 / .8);
-    --color-headings: rgb(85, 49, 0);
+    --color-headings: rgb(55, 71, 0);
     --color-links: rgb(51 102 204 / 1);
     --color-links-dark: rgb(0 51 153 / 1);
     --color-accent-color: rgb(102, 204, 124);
     --color-header-bg: transparent;
     --color-header-links: rgb(0, 0, 0);
-    --color-hero-bg: rgb(222, 240, 255);
+    --color-hero-bg: rgb(255, 247, 222);
     --color-footer-bg: rgb(255, 240, 211);
     --color-footer-text: rgb(0, 0, 0);
     --color-footer-links: rgb(227, 162, 238);
@@ -121,6 +121,7 @@ h2 {
 h3 {
     font-size: 1.3em;
     line-height: 1.3;
+    color: rgb(74, 74, 74);
 }
 
 p {
@@ -327,32 +328,34 @@ section {
 
 .hero h1 {
     padding-top: 2em;
-    line-height: 0.7;
+    line-height: 0.6;
 }
 
 @media (min-width:768px) {
     .hero h1 {
-        line-height: 0.9;
+        line-height: 0.8;
     }
 }
 
 @media (min-width:1000px) {
     .hero h1 {
-        line-height: 1.1;
+        line-height: 0.9;
     }
 }
 
 .hero h1 span.hero-headline {
     font-size: clamp(5rem, 12vw, 10rem);
-    font-style: bold;
+    font-weight: 700;
+    padding-bottom: 0;
 
 }
 
 .hero h1 span.hero-subhead {
     font-size: clamp(2rem, 4.5vw, 3.8rem);
-    font-style: bold;
+    font-weight: 600;
     font-family: var(--font-body);
     white-space: nowrap;
+    padding-top: 0;
 }
 
 /* SITE FOOTER */
@@ -453,6 +456,10 @@ section {
 
 .story h2 {
     color: rgb(99, 0, 21)
+}
+
+.story p {
+    padding-top: 15em;
 }
 
 /* animation  */
@@ -691,6 +698,7 @@ section {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 1em;
+    padding-top: 10em;
 }
 
 .menu .menu-grid .img-box:nth-child(1) {
@@ -739,16 +747,14 @@ section {
 
 
 
-.story p {
-    background-color: rgb(255, 221, 100);
-}
+
 
 
 /* HERO STYLE */
 
 .lanikai-hero-slide {
     align-content: center;
-    grid-template-columns: 40% 5% 55%;
+    grid-template-columns: 35% 10% 60%;
     display: grid;
 }
 
@@ -756,6 +762,13 @@ section {
     grid-column: 1 / 3;
     grid-row: 1;
     z-index: 10;
+    padding-bottom: 0;
+    font-weight: 900;
+}
+
+.lanikai-hero-slide .text-box p {
+    font-size: 1.3em;
+    font-weight: 100;
 }
 
 .lanikai-hero-slide .img-box {
@@ -851,6 +864,10 @@ section {
     background-color: rgb(255, 192, 192);
 }
 
+.page-about .hero h1 {
+    color: rgb(74, 74, 74);
+}
+
 .story-container {
     color: white;
 }
@@ -866,7 +883,7 @@ section {
 @media(min-width:768px) {
     .story-container {
         padding: 2em 12% 8em 12%;
-        border-radius: 0 0 45% 45%;
+        border-radius: 0 0 50% 50%;
         margin-top: -200px;
         margin-bottom: -100px;
         margin-left: auto;
@@ -878,8 +895,12 @@ section {
     font-size: 0.8em;
 }
 
-.about-img .img-box {
+/* .about-img .img-box {
     display: contents;
+} */
+
+.about-img {
+    display: flex;
 }
 
 .about-kicker {
@@ -900,6 +921,7 @@ section {
 .dream h2 {
     font-size: 4em;
     margin-bottom: 0;
+    color: rgb(74, 74, 74);
 }
 
 .dream .row:first-child {
