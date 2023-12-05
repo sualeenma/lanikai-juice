@@ -225,7 +225,12 @@ img {
     .two-thirds.centered {
         grid-column-start: 3;
     }
+
+    .two-thirds.pushed-one-third {
+        grid-column-start: 5;
+    }
 }
+
 
 /* FLEX GRID */
 
@@ -317,6 +322,7 @@ section {
     /* min-height: 100vh; */
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .hero h1 {
@@ -407,6 +413,11 @@ section {
 
 .break {
     word-break: break-all;
+}
+
+.columns-two {
+    columns: 2;
+    column-gap: 3em;
 }
 
 /* CUSTOM TYPE BLOCK: HEADLINE AND SUB HEADLINE */
@@ -836,6 +847,81 @@ section {
 
 /* ABOUT STYLE */
 
+.page-about .hero {
+    background-color: rgb(255, 192, 192);
+}
+
+.story-container {
+    color: white;
+}
+
+.story-container {
+    background-color: rgb(214, 101, 101);
+    max-width: 1000px;
+    margin-left: 2em;
+    margin-right: 2em;
+    padding: 2em 3em;
+}
+
+@media(min-width:768px) {
+    .story-container {
+        padding: 2em 12% 8em 12%;
+        border-radius: 0 0 45% 45%;
+        margin-top: -200px;
+        margin-bottom: -100px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.story-container .columns-two {
+    font-size: 0.8em;
+}
+
+.about-img .img-box {
+    display: contents;
+}
+
+.about-kicker {
+    font-size: 1.3em;
+}
+
+.story-container h2 {
+    color: white;
+    font-size: 3em;
+    font-family: var(--font-body);
+    font-weight: 500;
+}
+
+.story-container p {
+    max-width: none;
+}
+
+.dream h2 {
+    font-size: 4em;
+    margin-bottom: 0;
+}
+
+.dream .row:first-child {
+    padding-bottom: 0;
+}
+
+.dream .row:nth-child(2) {
+    padding-top: 0;
+}
+
+@media(max-width:767px) {
+    .dream h2 {
+        margin-bottom: .5em;
+        margin-top: 0;
+    }
+
+    .dream {
+        padding-top: 0;
+    }
+}
+
+/* 
 .about-head {
     background-color: rgb(255, 216, 223);
 }
@@ -852,16 +938,18 @@ section {
 .about-2-head {
     font-size: 5em;
     font-style: bold;
-}
+} */
 
 /* LOCATION STYLE */
 
 .location {
     display: flex;
     justify-content: center;
-
 }
 
+.page-location .hero {
+    background-color: white;
+}
 
 
 
