@@ -313,7 +313,7 @@ img {
 /* ALL SECTION */
 section {
     padding-top: 6em;
-    padding-bottom: 6em;
+    /* padding-bottom: 6em; */
 }
 
 /* HERO SECTION */
@@ -524,7 +524,7 @@ section {
 
 /* SCROLL TRIGGERED ANIMATION */
 
-
+/* 
 .animate-me-on-scroll.shimmy-up>* {
     opacity: 0;
     transform: translateY(100px);
@@ -564,7 +564,7 @@ section {
     opacity: 1;
     transform: translateX(0);
     transition: all .6s ease-out;
-}
+} */
 
 /* SITE NAV */
 
