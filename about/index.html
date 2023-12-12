@@ -8,11 +8,11 @@
     <!-- ADOBE FONTS -->
     <link rel="stylesheet" href="https://use.typekit.net/ehp7kom.css">
     <!-- GOOGLE FONTS -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
     <!-- MAIN CSS -->
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.min.css">
 </head>
 
 <body class="page-about">
@@ -110,8 +110,47 @@
         </div>
     </section>
 
+    <section>
+        <div class="swiper-container">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide bgimage">
+                    <div class="container"><img class="fade-in" src="../img/about-pic-1.png"
+                            alt="Photo in the interior of a Lanikai Juice with customers at the counter and basket of fruits on the floor."
+                            width="1000" height="1000">
+                    </div>
+                </div>
+                <div class="swiper-slide bgimage">
+                    <div class="container"><img class="fade-in" src="../img/about-img-2.png" alt="about Image"
+                            width="1000" height="1000">
+                    </div>
+                </div>
+                <div class="swiper-slide bgimage">
+                    <div class="container"><img class="fade-in" src="../img/about-img-3.png" alt="about Image"
+                            width="1000" height="1000">
+                    </div>
+                </div>
+                <div class="swiper-slide bgimage">
+                    <div class="container">
+                        <div class="container"><img class="fade-in" src="../img/about-img-4.png" alt="about Image"
+                                width="1000" height="1000">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
 
-    <section class="about-img">
+            <!-- If we need navigation buttons -->
+            <div id="swiper-button-next-modal" class="swiper-button-next"></div>
+            <div id="swiper-button-prev-modal" class="swiper-button-prev"></div>
+
+        </div>
+    </section>
+
+
+    <!-- <section class="about-img">
         <div class="img-box">
             <img class="fade-in" src="../img/about-pic-1.png"
                 alt="Photo in the interior of a Lanikai Juice with customers at the counter and basket of fruits on the floor."
@@ -127,7 +166,7 @@
             <img class="fade-in" src="../img/about-img-4.png" alt="about Image" width="250" height="250">
         </div>
     </section>
-
+ -->
 
     </main>
 

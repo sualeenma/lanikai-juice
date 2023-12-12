@@ -720,6 +720,10 @@ section {
     /* grid-column: 2 / 4; */
 }
 
+.menu p {
+    width: 20em;
+}
+
 .wellness {
     overflow-x: hidden;
 }
