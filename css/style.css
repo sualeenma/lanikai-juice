@@ -316,47 +316,8 @@ section {
     /* padding-bottom: 6em; */
 }
 
-/* HERO SECTION */
-.hero {
-    background-color: var(--color-hero-bg);
-    padding-top: 8em;
-    /* min-height: 100vh; */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
-.hero h1 {
-    padding-top: 2em;
-    line-height: 0.6;
-}
 
-@media (min-width:768px) {
-    .hero h1 {
-        line-height: 0.8;
-    }
-}
-
-@media (min-width:1000px) {
-    .hero h1 {
-        line-height: 0.9;
-    }
-}
-
-.hero h1 span.hero-headline {
-    font-size: clamp(5rem, 12vw, 10rem);
-    font-weight: 700;
-    padding-bottom: 0;
-
-}
-
-.hero h1 span.hero-subhead {
-    font-size: clamp(2rem, 4.5vw, 3.8rem);
-    font-weight: 600;
-    font-family: var(--font-body);
-    white-space: nowrap;
-    padding-top: 0;
-}
 
 /* SITE FOOTER */
 .site-footer {
@@ -451,11 +412,11 @@ section {
 }
 
 .wellness h2 {
-    color: rgb(66, 39, 0)
+    color: rgb(66, 39, 0);
 }
 
 .story h2 {
-    color: rgb(99, 0, 21)
+    color: rgb(99, 0, 21);
 }
 
 .story p {
@@ -756,51 +717,7 @@ section {
 
 /* HERO STYLE */
 
-.lanikai-hero-slide {
-    align-content: center;
-    grid-template-columns: 35% 10% 60%;
-    display: grid;
-}
 
-.lanikai-hero-slide .text-box {
-    grid-column: 1 / 3;
-    grid-row: 1;
-    z-index: 10;
-    padding-bottom: 0;
-    font-weight: 900;
-}
-
-.lanikai-hero-slide .text-box p {
-    font-size: 1.3em;
-    font-weight: 100;
-}
-
-.lanikai-hero-slide .img-box {
-    grid-column: 2 / 4;
-    grid-row: 1;
-    margin-top: 10%;
-}
-
-@media (max-width:767px) {
-    .lanikai-hero-slide {
-        grid-template-columns: 1fr;
-    }
-
-    .lanikai-hero-slide .text-box {
-        grid-row: 2;
-    }
-
-    .lanikai-hero-slide .img-box {
-        padding-top: 3em;
-        grid-row: 1;
-    }
-
-    .lanikai-hero-slide h1 {
-        padding-top: 0;
-        margin-top: 0;
-    }
-
-}
 
 /* MENU STYLE */
 
@@ -1052,3 +969,163 @@ section {
     display: block;
     padding: 1em;
 } */
+
+.nma-circular-carousel {
+    display: grid;
+    /* aspect-ratio: 3 / 2; */
+    /* height: 50vh; */
+    max-height: 600px;
+    /* Adjust this ratio to meet your content */
+    overflow: hidden;
+    position: relative;
+    background-color: pink;
+}
+
+.nma-circular-carousel .stationary-text-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 100;
+    transform: translate(-90%, -30%);
+    padding: 1em;
+}
+
+@media (max-width:767px) {
+    .nma-circular-carousel .stationary-text-box {
+        position: absolute;
+        top: 100%;
+        left: auto;
+        z-index: 100;
+        transform: translate(0%, -100%);
+    }
+}
+
+.nma-circular-carousel h1,
+.nma-circular-carousel h2 {
+    animation: nma-stationary-text-color-change 9s infinite linear;
+}
+
+.nma-circular-carousel h1 {
+    font-size: 120px;
+    font-size: clamp(30px, 12vw, 120px);
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.nma-circular-carousel h2 {
+    font-size: 49px;
+    font-size: clamp(15px, 6vw, 49px);
+    font-family: "Inter", Helvetica, Arial, sans-serif;
+    margin: 0;
+}
+
+.nma-circular-carousel p {
+    font-size: 20px;
+    font-size: clamp(14px, 2vw, 20px);
+    font-family: "Inter", Helvetica, Arial, sans-serif;
+}
+
+.nma-circular-carousel>.nma-circular-slide {
+    grid-area: 1/1;
+    width: 100%;
+    height: 150%;
+    transform-origin: 50% 125%;
+    /* background: skyblue; */
+}
+
+.nma-slide-content {
+    /*   background: pink; */
+    height: 66.666%;
+}
+
+.nma-circular-carousel::after,
+.nma-circular-carousel>.nma-circular-slide {
+    animation: nma-circular-carousel-rotate 9s infinite cubic-bezier(0.5, -0.2, 0.5, 1.2);
+}
+
+.nma-circular-carousel>.nma-circular-slide:nth-child(2) {
+    animation-delay: -3s;
+}
+
+.nma-circular-carousel>.nma-circular-slide:nth-child(3) {
+    animation-delay: -6s;
+}
+
+@keyframes nma-circular-carousel-rotate {
+
+    0%,
+    3% {
+        transform: rotate(0);
+    }
+
+    31%,
+    35% {
+        transform: rotate(-120deg);
+    }
+
+    64%,
+    68% {
+        transform: rotate(-240deg);
+    }
+
+    98%,
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
+@keyframes nma-stationary-text-color-change {
+
+    0%,
+    3% {
+        color: rgb(55, 71, 0);
+    }
+
+    31%,
+    35% {
+        color: rgb(66, 39, 0);
+    }
+
+    64%,
+    68% {
+        color: rgb(99, 0, 21);
+    }
+
+    98%,
+    100% {
+        color: rgb(55, 71, 0);
+    }
+}
+
+/* THIS IS MY LANIKAI SLIDE STYLE */
+
+.lanikai-hero-slide {
+    background: transparent;
+    align-items: center;
+    grid-template-columns: 30% 25% 45%;
+    display: grid;
+    padding: 2em 2em 0 2em;
+}
+
+/* .lanikai-hero-slide .text-box {
+    background: transparent;
+    grid-column: 1 / 3;
+    grid-row: 1;
+    z-index: 10;
+  } */
+
+.lanikai-hero-slide .img-box {
+    background: transparent;
+    grid-column: 2 / 4;
+    grid-row: 1;
+}
+
+/* FOR CODEPEN DEMO PURPOSES ONLY */
+body {
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
